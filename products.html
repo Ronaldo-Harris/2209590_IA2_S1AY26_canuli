@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Ronaldo Harris - 2209590 - Thursday @1pm -->
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Products - ArcadeHub</title>
+  <link rel="icon" type="image/png" href="../Assets/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="container header"><div class="brand"><div class="logo">AH</div><div class="text"><div>ArcadeHub</div></div></div>
+<nav class="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart <span id="cart-count" class="cart-mini">0</span></a><a href="about.html">About</a><a href="references.html">References</a></nav></header>
+<main class="container"><h1>All Wears</h1>
+	<section class="grid" aria-live="polite"></section> <!-- Product grid populated by JS -->
+</main>
+<footer class="container footer"><p><a href="../APA_References.docx">Download APA_References.docx</a></p></footer>
+
+<script src="script.js"></script>
+
+<!-- Product Modal pop-up for details
+ Modal is hidden by default (display:none) and used to show product details.
+role="dialog" and aria-modal="true" improve accessibility. -->
+<div id="product-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000">
+  <div role="dialog" aria-modal="true" aria-labelledby="modal-title"
+       style="max-width:900px;margin:5vh auto;background:#0f172a;border-radius:14px;padding:16px;box-shadow:0 20px 60px rgba(0,0,0,.5)">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h2 id="modal-title" style="margin:.2rem 0">Shoes Details</h2>
+      <button id="modal-close" class="btn secondary">Close</button>
+    </div>
+    <div id="modal-body" style="margin-top:.5rem"></div>
+  </div>
+</div>
+
+</body>
+</html>

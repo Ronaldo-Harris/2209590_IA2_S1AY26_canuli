@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- Ronaldo Harris - 2209590 - Thursday @1pm -->
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Login - ArcadeHub</title>
+  <link rel="icon" type="image/png" href="../Assets/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="container header"><div class="brand"><div class="logo">AH</div><div class="text">ArcadeHub</div></div>
+<nav class="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart <span id="cart-count" class="cart-mini">0</span></a><a href="references.html">References</a></nav></header>
+<main class="container">
+  <h1>Login</h1>
+  <!-- Prevents real submission (event.preventDefault()) and shows demo alert. -->
+  <form id="login-form" class="form" onsubmit="event.preventDefault(); alert('Demo login - not connected to a backend');">
+    <label>Username<input name="username"></label>
+    <label>Password<input name="password" type="password"></label>
+    <div style="display:flex;gap:.5rem">
+      <button class="btn">Sign In</button>
+      <a href="register.html" class="btn secondary">Register</a>
+    </div>
+  </form>
+</main>
+<footer class="container footer"><a href="../APA_References.docx">Download APA_References.docx</a></p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

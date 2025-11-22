@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- Ronaldo Harris - 2209590 - Thursday @1pm -->
+<html lang="en"> <!-- Defines the language of the document as English -->
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cart - ArcadeHub</title>
+  <link rel="icon" type="image/png" href="../Assets/favicon.png"/>
+   <!-- Preconnect to improve font loading speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header section with logo and navigation -->
+<header class="container header">
+	<div class="brand">
+	<div class="logo">AH</div> <!-- Logo abbreviation -->
+	<div class="text"><div>ArcadeHub</div></div></div>
+<nav class="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart <span id="cart-count" class="cart-mini">0</span></a><a href="about.html">About</a><a href="references.html">References</a></nav></header>
+<main class="container">
+  <h1>Your Cart</h1>
+  <table class="table" aria-live="polite"> <!-- Table for cart items -->
+    <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Sub-total</th><th>Action</th></tr></thead>
+    <tbody id="cart-items"></tbody> <!-- Empty body populated by JS -->
+  </table>
+  <aside id="cart-totals" style="margin-top:1rem"></aside> <!-- Cart totals -->
+</main>
+<footer class="container footer"><p><a href="../APA_References.docx">Download APA_References.docx</a></p></footer>
+
+<script src="script.js"></script> <!-- External JavaScript -->
+</body>
+</html>

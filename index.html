@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- Ronaldo Harris - 2209590 - Thursday @1pm -->
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ArcadeHub - Football Shoes Store</title>
+  <link rel="icon" type="image/png" href="../Assets/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="container header" role="banner">
+  <div class="brand">
+    <div class="logo">AH</div>
+    <div class="text"><div>ArcadeHub</div><div style="font-size:.8rem;color:var(--muted)">Football Kicks marketplace</div></div>
+  </div>
+  <nav class="nav" role="navigation" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart <span id="cart-count" class="cart-mini">0</span></a>
+    <a href="about.html">About Us</a>
+    <a href="login.html">Login</a>
+  <a href="references.html">References</a></nav>
+</header>
+<main class="container">
+  <section style="display:flex;gap:1rem;align-items:center;justify-content:space-between">
+    <div>
+      <h1 style="margin:0">ArcadeHub - "Fuel your game!"</h1>
+      <p style="color:var(--muted)">Browse through, find what is worn by the best.
+    </div>
+    <div><a href="products.html" class="btn">Browse Boots</a></div>
+  </section>
+  <section style="margin-top:1rem">
+    <h2>Featured</h2>
+    <div class="grid" aria-live="polite"></div>
+  </section>
+</main>
+<footer class="container footer">
+  <p>ArcadeHub</p>
+<p><a href="../APA_References.docx"><p>Download APA_References.docx</a></p></footer>
+
+<script src="script.js"></script>
+
+<!-- Product Modal -->
+<div id="product-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000">
+  <div role="dialog" aria-modal="true" aria-labelledby="modal-title"
+       style="max-width:900px;margin:5vh auto;background:#0f172a;border-radius:14px;padding:16px;box-shadow:0 20px 60px rgba(0,0,0,.5)">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h2 id="modal-title" style="margin:.2rem 0">Shoes Details</h2>
+      <button id="modal-close" class="btn secondary">Close</button>
+    </div>
+    <div id="modal-body" style="margin-top:.5rem"></div>
+  </div>
+</div>
+
+</body>
+</html>

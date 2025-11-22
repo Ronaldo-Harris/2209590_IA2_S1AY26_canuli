@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Ronaldo Harris - 2209590 - Thursday @1pm -->
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Register - ArcadeHub</title>
+  <link rel="icon" type="image/png" href="../Assets/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="container header"><div class="brand"><div class="logo">AH</div><div class="text">ArcadeHub</div></div>
+<nav class="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart <span id="cart-count" class="cart-mini">0</span></a><a href="references.html">References</a></nav></header>
+<main class="container">
+  <h1>Register</h1>
+  <!-- Form used for registration -->
+  <form id="register-form" class="form" onsubmit="event.preventDefault(); alert('Demo registration saved to localStorage'); localStorage.setItem('demo_user', JSON.stringify({username: this.username.value, email: this.email.value}));">
+    <label>Full name<input name="fullname" required></label>
+    <label>Date of birth<input name="dob" type="date"></label>
+    <label>Email<input name="email" type="email" required></label>
+    <label>Username<input name="username" required></label>
+    <label>Password<input name="password" type="password" required></label>
+    <div style="display:flex;gap:.5rem">
+      <button class="btn">Create Account</button>
+      <a href="login.html" class="btn secondary">Back to Login</a>
+    </div>
+  </form>
+</main>
+<footer class="container footer"><p><a href="../APA_References.docx">Download APA_References.docx</a></p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
